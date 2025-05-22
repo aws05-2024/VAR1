@@ -9,7 +9,6 @@ updates:
       interval: "weekly"  # Options: "daily", "weekly", "monthly"
     commit-message:
       prefix: "fix"  # Prefix for commit message, can be "chore" or custom
-    versioning-strategy: "auto"  # Options: "auto", "increase", "lockfile-only", " widen"
 
   # For Python (e.g., requirements.txt)
   - package-ecosystem: "pip"
@@ -18,7 +17,6 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "chore"
-    versioning-strategy: "auto"
 
   # For Maven (Java projects)
   - package-ecosystem: "maven"
@@ -27,7 +25,6 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "fix"
-    versioning-strategy: "increase"
 
   # For Ruby (e.g., Gemfile)
   - package-ecosystem: "bundler"
@@ -36,4 +33,3 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "chore"
-    versioning-strategy: "auto"
