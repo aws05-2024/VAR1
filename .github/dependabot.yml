@@ -1,0 +1,39 @@
+# File: .github/dependabot.yml
+
+version: 2
+updates:
+  # For JavaScript/Node.js
+  - package-ecosystem: "npm"  # Or "yarn", "npm", "pip", "maven", etc.
+    directory: "/"  # Location of the package file, relative to the root of the repo
+    schedule:
+      interval: "weekly"  # Options: "daily", "weekly", "monthly"
+    commit-message:
+      prefix: "fix"  # Prefix for commit message, can be "chore" or custom
+    versioning-strategy: "auto"  # Options: "auto", "increase", "lockfile-only", " widen"
+
+  # For Python (e.g., requirements.txt)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+    versioning-strategy: "auto"
+
+  # For Maven (Java projects)
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "fix"
+    versioning-strategy: "increase"
+
+  # For Ruby (e.g., Gemfile)
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+    versioning-strategy: "auto"
