@@ -1,0 +1,144 @@
+In browsers -- inspect
+html
+.js
+node
+
+console.log('Hello world')
+
+*********Variables: To store a data Temporarily in computer storage--(like box with label)
+
+let name='Varsh';
+console.log(name);
+  
+//cannot a reserved keyword like if,else
+//Should be meaningfull
+//cannot start with a number 1name
+//cannot contain space or hypen -
+//case sensitive
+
+*********Constants: If we dnt want to change the value of variable
+ const interestRate='0.2';
+ console.log(interestRate);
+
+*****Primitive types (Value types):
+String,Numbers,Boolean,Undefined,Null
+
+let name='Varsh'; /string
+let age=24; /number
+let isapproved= true;  /boolean
+let firstName= undefined; /undefined
+let lastName= null;  /null
+
+****Reference types:
+Objects,Array,Functions
+
+*********Dynamic and static Languages:
+to check type of the variable--> typeof
+
+JavaScript is a dynamic language 
+let name= 'Varsh';  --> Type of a variable can be changed in future(Dynamically typped)
+
+Other programming languages which are static
+string name = 'John'; --> Type of a variable cannot be changed(Statically typped)
+
+
+******Objects: things or objects with a properties
+Instead of
+let name='Varsh';
+let age=24;
+
+we can use object
+let person = {
+    name:'Varsh',
+    age:14
+};
+console.log(person);
+
+
+
+let person = {
+    name:'Varsh',
+    age:14
+};
+console.log(person);
+
+
+//to change the properties use dot notation or brackets
+person.name='john';
+//to access the properties use dot notation or brackets
+console.log(person.name);
+person['name']='john';
+console.log(person);
+
+******Arrays: Data structure to store list of objects/items (Dynamic--can change the type of elements in array)
+
+let selectedColors=['red','blue'];
+console.log(selectedColors);
+selectedColors[2]='green';
+
+
+console.log(selectedColors[1]);	    --Indexes
+console.log(selectedColors.length); --properties
+
+-->typeof selectedColors
+'object'
+
+**********Functions: A set of statements performs a tasks
+function greet() {
+console.log('hello world');
+}
+
+greet(); //calling the functions
+
+
+function greet(name) {    //name--parameter
+console.log('hello'+ name);
+}
+
+greet('john'); //calling the functions  //john-arguement
+
+-->multiple parameter and arguments
+function greet(name, lastName) {    //name--parameter
+console.log('hello'+ name + ' ' + lastName);
+}
+
+greet('john','Smith'); //calling the functions  //john-arguement
+
+**********Types of Function:
+
+performing tasks
+
+calculating the value and returing:
+
+function square(number){
+return number*number;
+}
+
+console.log(square(2));
+
+
+
+
+
+********************Operators:
+Arithmetic,Assignment,Comparision,Logical,Bitwise Operators
+
+************precedence of operators
+multiplication and division has higher precedence than addition and subtraction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
